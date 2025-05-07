@@ -1,0 +1,73 @@
+This represents a sample desired output and the understanding of the output , consider this example to configure rest of the schemes. Strictly no values from the example should be considered for any scheme creation , it is just a representation of the expected output . 
+{
+  "output": {
+    "Brand": "Oppo",
+    "Category": "Smartphone",
+    "Model Name": "Find X8",
+    "Model Description": "Oppo Find X8 with 12GB RAM and 256GB Internal Storage",
+    "SKU": "FINDX812GBCPH2651",
+    "MRP": 69999,
+    "MOP": 56000,
+    "Bank Name": "IDFC CC",
+    "Scheme Type": "Brand EMI",
+    "EMI Type": "Low Cost EMI",
+    "EMI Tenure": 24,
+    "Low Cost EMI Subvention": 6%,
+    "Cashback Type": "Percentage",
+    "Cashback Amount": 10,
+    "Maximum Cashback Amount": 5000,
+    "Promotion Start Date": "2025-03-01",
+    "Promotion End Date": "2025-03-30",
+    "Scheme ID": "OPPO_Smartphone_FindX8_IDFCFirst_FINDX812GBCPH2651",
+    "Is EMI": true,
+    "Is Cashback": true,
+    "Is Upfront": true,
+    "EMI Brand Subvention": 6%,
+    "EMI Bank Subvention": 0,
+    "Cashback Brand Subvention": 35,
+    "Cashback Bank Subvention": 65,
+    "Additional Terms & Conditions": "Interest subsidy of up to 6% borne by the brand."
+  },
+  "understanding": {
+    "Product Overview": {
+      "Brand": "The name of the brand will always be Oppo . ",
+      "Category": "This product falls under the smartphone category, indicating that it is a mobile device with smart features.",
+      "Model": "Find X8, a premium smartphone model with top-tier specifications.",
+      "Description": "The Oppo Find X8 comes with 12GB RAM and 256GB internal storage, making it a high-performance device suitable for gaming, multitasking, and heavy applications.",
+      "SKU": "A unique identifier id for the product - FINDX812GBCPH2651"
+    },
+    "Pricing Strategy": {
+      "MRP": "₹69,999 (Maximum Retail Price) is the highest price at which the product can be sold.",
+      "MOP": "₹56,000 (Minimum Operating Price) indicates that minimum price below which the product can't be sold. It'll always be lower than MRP."
+    },
+    "Bank & Financing Details": {
+      "Bank Name": "IDFC First Bank is the financial institution facilitating the EMI and cashback offers.",
+      "Scheme Type": "Brand EMI, which means the brand (Oppo) is directly involved in providing financial benefits rather than just the bank.",
+      "EMI Type": "Low Cost EMI, implying that customers can buy the product in installments with minimal interest or processing fees."
+    },
+    "EMI Breakdown": {
+      "EMI Tenure": "24 months, meaning the cost of the smartphone will be divided into 24 equal payments.",
+      "Low Cost EMI Subvention": "6%, meaning a portion of the interest cost is covered by Oppo, making the EMI cheaper for customers. ",
+      "Brand Subvention": "6% is covered by Oppo, reducing the overall cost for consumers.",
+      "Bank Subvention": "0%, meaning the bank is not contributing to interest reduction."
+    },
+    "Cashback Benefits": {
+      "Cashback Type": "Percentage-based, meaning the cashback is calculated as a percentage of the product price.",
+      "Cashback Percentage": "10% of the purchase price will be refunded as cashback.",
+      "Maximum Cashback Cap": "₹5,000 is the highest cashback amount a customer can receive.",
+      "Brand Contribution": "Oppo is covering 35% of the cashback amount.",
+      "Bank Contribution": "IDFC First Bank is covering 65% of the cashback amount."
+    },
+    "Promotion Timeline": {
+      "Start Date": "2025-03-01, marking the beginning of the offer.",
+      "End Date": "2025-03-30, indicating that the cashback and EMI benefits are valid only within this timeframe."
+    },
+    "Additional Information": {
+      "Scheme ID": "A unique identifier for tracking and managing this promotional offer.",
+      "Is EMI Available?": "Yes, customers can purchase the smartphone in easy installments.",
+      "Is Cashback Available?": "Yes, buyers will receive cashback as part of the offer.",
+      "Is Upfront Cashback?": "Yes, the cashback is applied directly rather than requiring a later claim.",
+      "Additional Terms": "The brand (Oppo) is covering up to 6% of the interest cost, making the EMI more affordable for consumers."
+    }
+  }
+}

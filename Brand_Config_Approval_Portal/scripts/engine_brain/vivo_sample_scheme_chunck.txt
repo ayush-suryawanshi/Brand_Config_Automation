@@ -1,0 +1,142 @@
+{ 'Output' : {
+  "Brand": "Vivo",
+  "Category": "Smartphone",
+  "Model Name": "T3 Pro 5G(8+256G)",
+  "Model Description": "Oppo T3 Pro 5G with 8GB RAM and 256GB Internal Storage",
+  "SKU": "T3PRO8GB256G",
+  "MRP": 24999,
+  "MOP": 20999,
+  "Bank Name": "SBI",
+  "Scheme Type": "Brand EMI",
+  "EMI Type": "Low Cost EMI",
+  "EMI Tenure": 12,
+  "Low Cost EMI Subvention": "2.75",
+  "Cashback Type": "Fixed Amount",
+  "Cashback Amount": "2000",
+  "Maximum Cashback Amount": 2000,
+  "Promotion Start Date": "2025-03-01",
+  "Promotion End Date": "2025-03-30",
+  "Scheme ID": "OPPO_Smartphone_T3Pro_SBI_CC_12M",
+  "Is EMI": true,
+  "Is Cashback": true,
+  "Is Upfront": true,
+  "EMI Brand Subvention": "2.75",
+  "EMI Bank Subvention": 0,
+  "Cashback Brand Subvention": 40,
+  "Cashback Bank Subvention": 0,
+  "Additional Terms & Conditions": "Low Cost EMI subvention is capped at 2.75%."
+}
+
+
+{
+  "output understanding": {
+    "summary": "This scheme details the brand EMI offer available on the Vivo T3 Pro 5G (8GB RAM + 256GB Storage) smartphone, featuring a 12-month Low Cost EMI (LCE) plan with a cashback offer. The offer is available via SBI Credit Cards and includes brand subvention for EMI interest costs.",
+    "detailed_explanation": {
+      "Brand": {
+        "value": "Vivo",
+        "description": "The smartphone brand associated with this offer."
+      },
+      "Category": {
+        "value": "Smartphone",
+        "description": "Defines the type of product being promoted under this scheme."
+      },
+      "Model Name": {
+        "value": "T3 Pro 5G(8+256G)",
+        "description": "Specifies the exact model of the smartphone covered under the scheme."
+      },
+      "Model Description": {
+        "value": "Oppo T3 Pro 5G with 8GB RAM and 256GB Internal Storage",
+        "description": "Provides a detailed description of the product model, including RAM and storage capacity."
+      },
+      "SKU": {
+        "value": "T3PRO8GB256G",
+        "description": "A unique identifier assigned to this specific product."
+      },
+      "MRP": {
+        "value": 24999,
+        "description": "The Maximum Retail Price (MRP) at which this product can be sold in the market."
+      },
+      "MOP": {
+        "value": 20999,
+        "description": "The Minimum Operating Price (MOP), the value below which the transection for SKU can't happen."
+      },
+      "Bank Name": {
+        "value": "SBI",
+        "description": "The financial institution providing EMI and cashback benefits for this scheme."
+      },
+      "Scheme Type": {
+        "value": "Brand EMI",
+        "description": "Indicates that this EMI scheme is supported by the brand (Vivo) instead of the bank."
+      },
+      "EMI Type": {
+        "value": "Low Cost EMI",
+        "description": "Specifies the type of EMI, meaning that the customer pays reduced or zero interest due to subvention."
+      },
+      "EMI Tenure": {
+        "value": 12,
+        "description": "The duration for which the EMI will be applicable, in months."
+      },
+      "Low Cost EMI Subvention": {
+        "value": "2.75%",
+        "description": "Indicates the percentage of interest covered by the brand to reduce customer costs."
+      },
+      "Cashback Type": {
+        "value": "Fixed Amount",
+        "description": "Specifies that the cashback provided is a fixed monetary amount rather than a percentage."
+      },
+      "Cashback Amount": {
+        "value": 2000,
+        "description": "The exact cashback amount provided to the customer upon completing the purchase."
+      },
+      "Maximum Cashback Amount": {
+        "value": 2000,
+        "description": "The maximum cashback the customer can receive under this scheme."
+      },
+      "Promotion Start Date": {
+        "value": "2025-03-01",
+        "description": "The date when this promotional offer becomes active."
+      },
+      "Promotion End Date": {
+        "value": "2025-03-30",
+        "description": "The last date till which this promotional offer is valid."
+      },
+      "Scheme ID": {
+        "value": "OPPO_Smartphone_T3Pro_SBI_CC_12M",
+        "description": "A unique identifier for this scheme, generated based on brand, category, model, bank, and tenure."
+      },
+      "Is EMI": {
+        "value": true,
+        "description": "Indicates that an EMI option is available under this scheme."
+      },
+      "Is Cashback": {
+        "value": true,
+        "description": "Confirms that a cashback benefit is provided in this scheme."
+      },
+      "Is Upfront": {
+        "value": true,
+        "description": "Indicates that the cashback is provided as an upfront discount rather than a post-purchase rebate."
+      },
+      "EMI Brand Subvention": {
+        "value": "2.75",
+        "description": "The percentage of EMI interest costs covered by the brand to reduce the burden on the customer."
+      },
+      "EMI Bank Subvention": {
+        "value": 0,
+        "description": "The percentage of EMI interest costs covered by the bank, which in this case is zero."
+      },
+      "Cashback Brand Subvention": {
+        "value": "40",
+        "description": "The proportion of cashback amount paid by the brand (Vivo)."
+      },
+      "Cashback Bank Subvention": {
+        "value": 0,
+        "description": "The proportion of cashback amount paid by the bank, which is zero in this case."
+      },
+      "Additional Terms & Conditions": {
+        "value": "Low Cost EMI subvention is capped at 2.75%.",
+        "description": "Any extra terms that apply, specifying that the brand will cover only up to 2.75% of the interest cost."
+      }
+    }
+  }
+}
+

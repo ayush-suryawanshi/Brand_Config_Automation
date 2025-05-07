@@ -1,0 +1,112 @@
+{Sample Output : {
+  "Brand": "Samsung",
+  "Category": "Tabs",
+  "Model Name": "Galaxy Book Go",
+  "Model Description": "Samsung Galaxy Book Go NP340X with up to 7.5% Subvention for 12 months tenure",
+  "SKU": "NP340XLA-KA1IN",
+  "MRP": "23000",
+  "MOP": "21000"
+  "Bank Name": "HDFC",
+  "Scheme Type": "Brand EMI",
+  "EMI Type": "Low Cost EMI",
+  "EMI Tenure": 12,
+  "Low Cost EMI Subvention": 7.5,
+  "Cashback Type": "Fixed Amount",
+  "Cashback Amount": 3000,
+  "Maximum Cashback Amount": 3000,
+  "Promotion Start Date": "1st March 2025",
+  "Promotion End Date": "6th March 2025",
+  "Scheme ID": "SAMSUNG_Tabs_GalaxyBookGo_HDFC_12M",
+  "Is EMI": true,
+  "Is Cashback": true,
+  "Is Upfront": true,
+  "EMI Brand Subvention": 7.5,
+  "EMI Bank Subvention": 0,
+  "Cashback Brand Subvention": 100,
+  "Cashback Bank Subvention": 0,
+  "Additional Terms & Conditions": "Cashback available for credit card EMI purchases from select banks, valid from 1st March to 6th March 2025."
+}}
+
+{Sample Output Understanding : {
+  "Brand": "Samsung",
+  "Brand Description": "The manufacturer of the product, in this case, Samsung is the brand offering the device.",
+  
+  "Category": "Tabs",
+  "Category Description": "This indicates the product belongs to the 'Tabs' category, which refers to tablets, particularly in this case, a tablet device (Galaxy Book Go).",
+  
+  "Model Name": "Galaxy Book Go",
+  "Model Name Description": "The name of the product model, here it is 'Galaxy Book Go', which is a tablet from Samsung.",
+  
+  "Model Description": "Samsung Galaxy Book Go NP340X with up to 7.5% Subvention for 12 months tenure",
+  "Model Description Explanation": "This field provides a brief description of the product, mentioning the brand name, the model (Galaxy Book Go NP340X), and the promotional offer details (7.5% subvention for the 12-month EMI). It helps customers understand the main selling points of the product.",
+  
+  "SKU": "NP340XLA-KA1IN",
+  "SKU Description": "This is the Stock Keeping Unit (SKU), a unique identifier for the product in inventory management and sales systems. Here, 'NP340XLA-KA1IN' uniquely identifies the specific tablet model.",
+  
+  "MRP": "23000",
+  "MRP Description": "The Maximum Retail Price (MRP) is not provided in this case , thus set it to null. Usually, this is the full price of the product without any discounts or promotional offers.",
+  
+  "MOP": "21000",
+  "MOP Description": "The Minimum Operating Price (MOP) is provided under Min section . This typically refers to the price at which the product is being sold after any discounts or promotions.",
+  
+  "Bank Name": "HDFC",
+  "Bank Name Explanation": "The bank associated with the promotional offer. In this case, HDFC is the financial institution partnering to offer EMI and cashback options for customers.",
+  
+  "Scheme Type": "Brand EMI",
+  "Scheme Type Description": "The type of promotional scheme being offered, which is 'Brand EMI'. This means the EMI option is provided directly by the brand (Samsung), not through external financing.",
+  
+  "EMI Type": "Low Cost EMI",
+  "EMI Type Explanation": "The type of EMI scheme being offered. 'Low Cost EMI' means the interest rates are reduced compared to standard EMI, making it easier for customers to pay in installments.",
+  
+  "EMI Tenure": 12,
+  "EMI Tenure Description": "The number of months over which the customer can repay the EMI. In this case, the EMI tenure is 12 months.",
+  
+  "Low Cost EMI Subvention": 7.5,
+  "Low Cost EMI Subvention Explanation": "The subvention rate provided by the brand for the low-cost EMI scheme. This means Samsung is providing a 7.5% reduction in interest rates for customers opting for the 12-month EMI option.",
+  
+  "Cashback Type": "Fixed Amount",
+  "Cashback Type Explanation": "The cashback offered is a fixed amount. Customers will receive a set cashback value, as opposed to a percentage of the purchase price.",
+  
+  "Cashback Amount": 3000,
+  "Cashback Amount Explanation": "The fixed cashback amount of ₹3000 that customers will receive when they purchase the device through the promotional scheme.",
+  
+  "Maximum Cashback Amount": 3000,
+  "Maximum Cashback Amount Explanation": "This field indicates that the maximum cashback available is ₹3000. Customers can only receive up to ₹3000, and no more, even if the product price exceeds this value.",
+  
+  "Promotion Start Date": "1st March 2025",
+  "Promotion Start Date Explanation": "The date on which the promotional offer starts, i.e., customers can begin availing the EMI and cashback scheme from 1st March 2025.",
+  
+  "Promotion End Date": "6th March 2025",
+  "Promotion End Date Explanation": "The date on which the promotional offer ends, meaning customers must make their purchase by 6th March 2025 to qualify for the scheme.",
+  
+  "Scheme ID": "SAMSUNG_Tabs_GalaxyBookGo_HDFC_12M",
+  "Scheme ID Description": "A unique identifier for the promotional scheme. This helps in tracking and managing the offer in the system. The ID 'SAMSUNG_Tabs_GalaxyBookGo_HDFC_12M' represents the Samsung Galaxy Book Go EMI scheme through HDFC for a 12-month tenure.",
+  
+  "Is EMI": true,
+  "Is EMI Explanation": "Indicates whether an EMI option is available for this product. In this case, 'true' means that EMI is available.",
+  
+  "Is Cashback": true,
+  "Is Cashback Explanation": "Indicates whether cashback is being offered with the promotional scheme. Here, 'true' means cashback is included.",
+  
+  "Is Upfront": true,
+  "Is Upfront Explanation": "Indicates whether the offer is available upfront. 'True' means the cashback offer is available immediately upon purchase, without any delayed eligibility.",
+  
+  "EMI Brand Subvention": 7.5,
+  "EMI Brand Subvention Explanation": "The amount of subvention (discount) offered by the brand on the EMI. Samsung provides a 7.5% subvention for the 12-month EMI tenure.",
+  
+  "EMI Bank Subvention": 0,
+  "EMI Bank Subvention Explanation": "Indicates whether the bank is providing any subvention for the EMI scheme. In this case, '0' means HDFC is not providing any subvention for the EMI, and the full subvention is from Samsung.",
+  
+  "Cashback Brand Subvention": 100,
+  "Cashback Brand Subvention Explanation": "The cashback subvention provided by the brand. Here, 100% of the cashback (₹3000) is being provided by Samsung, and there is no involvement of the bank.",
+  
+  "Cashback Bank Subvention": 0,
+  "Cashback Bank Subvention Explanation": "Indicates that the bank is not contributing to the cashback. In this case, '0' means HDFC is not providing any portion of the cashback.",
+  
+  "Additional Terms & Conditions": "Cashback available for credit card EMI purchases from select banks, valid from 1st March to 6th March 2025.",
+  "Additional Terms & Conditions Explanation": "This section outlines the conditions for the cashback offer. It specifies that the cashback is only applicable for EMI purchases made using a credit card from select banks during the promotion period.",
+  
+  "Status": "Go Live",
+  "Status Explanation": "The status indicates that the offer is live and available to customers. 'Go Live' means the promotional scheme is now active and customers can start availing the benefits."
+}
+}

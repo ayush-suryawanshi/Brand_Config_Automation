@@ -1,0 +1,81 @@
+Sample Output {
+  "Brand": "Realme",
+  "Category": "Smartphone",
+  "Model Name": "Realme 14 Pro 5G",
+  "Model Description": "Realme 14 Pro 5G (Suede Grey, 8GB RAM + 128GB Storage)",
+  "SKU": "6941764452268",
+  "MRP": 24999,
+  "MOP": 20999,
+  "Bank Name": "HDFC",
+  "Scheme Type": "Brand EMI",
+  "EMI Type": "Low Cost EMI",
+  "EMI Tenure": 6,
+  "Low Cost EMI Subvention": 2.0%,
+  "Cashback Type": "Fixed Amount",
+  "Cashback Amount": 2000,
+  "Maximum Cashback Amount": 2000,
+  "Promotion Start Date": 2025-04-01,
+  "Promotion End Date": 2025-04-30,
+  "Scheme ID": "REALME_Smartphone_14Pro_HDFC_8GB128GB",
+  "Is EMI": true,
+  "Is Cashback": true,
+  "Is Upfront": true,
+  "EMI Brand Subvention": 2.0%,
+  "EMI Bank Subvention": null,
+  "Cashback Brand Subvention": 40%,
+  "Cashback Bank Subvention": 60%,
+  "Additional Terms & Conditions": "Cashback available for credit card EMI purchases from select banks."
+}
+
+
+{
+  "Response": {
+    "Summary": "The Realme 14 Pro 5G is being offered with a special Brand EMI scheme through HDFC Bank, allowing customers to purchase the device using a low-cost EMI plan. Additionally, eligible customers can receive a fixed cashback of ₹2,000, which is split between the brand and the bank. This offer is only valid for credit card EMI purchases during the promotional period from 20th April 2025 to 20th April 2025.",
+    
+    "Product Information": {
+      "Brand": "Realme",
+      "Category": "Smartphone",
+      "Model": {
+        "Name": "Realme 14 Pro 5G",
+        "Description": "The Realme 14 Pro 5G (Suede Grey) is a premium mid-range smartphone that features 8GB of RAM and 128GB of internal storage. Designed for high-performance tasks, it comes equipped with a powerful processor, an advanced camera setup, and a high-refresh-rate display for smooth user experience.",
+        "SKU": "6941764452268"
+      }
+    },
+
+    "Pricing Details": {
+      "MRP": 24999,
+      "MOP": 24999,
+      "Explanation": "The Maximum Retail Price (MRP) of the device is ₹24,999, and it is being offered at the Market Operating Price (MOP) of ₹24,999. This means there is no additional discount on the device itself, but customers can benefit from the EMI and cashback offers."
+    },
+
+    "Bank and EMI Details": {
+      "Eligible Bank": "HDFC",
+      "Scheme Type": "Brand EMI",
+      "Explanation": "HDFC Bank is offering this special EMI scheme in collaboration with Realme. Customers purchasing the smartphone using HDFC credit card EMI will be eligible for cashback benefits.",
+      
+      "EMI Information": {
+        "Type": "Low Cost EMI",
+        "Tenure": "6 Months",
+        "Subvention": {
+          "Brand Contribution": "2.0%",
+          "Bank Contribution": "Not Applicable"
+        },
+        "Explanation": "The EMI plan is categorized as 'Low Cost EMI,' which means the customer pays reduced interest. The brand is covering 2.0% of the interest cost, making the EMI more affordable. The bank is not contributing to the subvention."
+      }
+    },
+
+    "Cashback Offer": {
+      "Type": "Fixed Amount",
+      "Amount": 2000,
+      "Maximum Amount": 2000,
+      "Distribution": {
+        "Brand Contribution": "40%",
+        "Bank Contribution": "60%"
+      },
+      "Explanation": "A fixed cashback of ₹2,000 is provided on this purchase. The cashback is split between the brand (40%) and the bank (60%). This means the brand covers ₹800, while HDFC Bank covers ₹1,200. This cashback is applicable only for credit card EMI purchases."
+    },
+
+    "Promotion Validity": {
+      "Start Date": "2025-04-01",
+      "End Date": "2025-04-30",
+      "Explanation": "The promotional offer is available for a limited time, from 20th

@@ -1,0 +1,109 @@
+{ Sample Output : {
+  "Brand": "Xiaomi",
+  "Category": "Phone",
+  "Model Name": "Redmi 13C 5G",
+  "Model Description": "Redmi 13C 5G with 6GB RAM and 128GB Internal Storage in Startrail Green color",
+  "SKU": "53285",
+  "MRP": 11299,
+  "MOP": 10999,
+  "Bank Name": "SBI",
+  "Scheme Type": "Brand EMI",
+  "EMI Type": "Low Cost EMI",
+  "EMI Tenure": 12,
+  "Low Cost EMI Subvention": 2.75,
+  "Cashback Type": "Fixed Amount",
+  "Cashback Amount": 2000,
+  "Maximum Cashback Amount": 2000,
+  "Promotion Start Date": "2025-03-01",
+  "Promotion End Date": "2025-03-30",
+  "Scheme ID": "Redmi_Phone_13C5G_SBI_6GB128GB_53285",
+  "Is EMI": true,
+  "Is Cashback": true,
+  "Is Upfront": true,
+  "EMI Brand Subvention": 2.75,
+  "EMI Bank Subvention": 0,
+  "Cashback Brand Subvention": 40,
+  "Cashback Bank Subvention": 60,
+  "Additional Terms & Conditions": "Cashback available for credit card EMI purchases from select banks."
+}
+
+Sample Output Understanding : 
+{
+  "Brand": "Xiaomi",
+  "Brand Description": "Redmi is a popular smartphone brand that offers a wide range of affordable and feature-packed devices, including both budget and premium models. It is known for providing high-quality smartphones at competitive prices.",
+  
+  "Category": "Phone",
+  "Category Description": "This product falls under the 'Phone' category, which includes mobile devices designed for communication, internet browsing, gaming, and other multimedia functionalities. The category is further subdivided into different types of phones such as smartphones, feature phones, etc.",
+  
+  "Model Name": "Redmi 13C 5G",
+  "Model Name Description": "The 'Redmi 13C 5G' is a smartphone model from the Redmi series, featuring advanced 5G connectivity for faster internet speeds, and built for users who need performance and multitasking capabilities in their daily mobile usage.",
+  
+  "Model Description": "Redmi 13C 5G with 6GB RAM and 128GB Internal Storage in Startrail Green color",
+  "Model Description Explanation": "This model comes equipped with 6GB of RAM and 128GB of internal storage, which provides users with a good amount of space for apps, games, and media files. The 'Startrail Green' color adds a premium and stylish look to the device. Additionally, the phone supports 5G connectivity, which enhances internet speeds for streaming, gaming, and browsing.",
+  
+  "SKU": "53285",
+  "SKU Description": "The SKU (Stock Keeping Unit) is a unique identifier for this specific model of the Redmi 13C 5G. This number helps in inventory management, stock tracking, and ordering from suppliers.",
+  
+  "MRP": 11299,
+  "MRP Explanation": "The MRP (Maximum Retail Price) is ₹11,299. This is the highest price at which the product can be sold by the retailer. It serves as the suggested retail price for customers to refer to.",
+  
+  "MOP": 10999,
+  "MOP Explanation": "The MOP (Minimum Operating Price) is ₹10,999, which is the price at which the product is being sold in the market.This price is set because it is equivalent to Min Swipe (Minimum Swipe) and in case MOP isn't clearly available MOP value should be equivalent to Min Swipe (Minimum Swipe) or any other field indicating the minimum price.",
+  
+  "Bank Name": "SBI",
+  "Bank Name Explanation": "SBI (State Bank of India) is the bank that is partnering with the seller to offer EMI (Equated Monthly Installment) options for customers. SBI is one of the largest and most trusted banks in India.",
+  
+  "Scheme Type": "Brand EMI",
+  "Scheme Type Explanation": "The scheme type is 'Brand EMI', meaning the EMI offer is provided by the brand (Redmi), rather than through a third-party lender. This typically includes interest-free or low-interest payment options.",
+  
+  "EMI Type": "Low Cost EMI",
+  "EMI Type Explanation": "The EMI option available is 'Low Cost EMI', which means customers can purchase the phone by paying in monthly installments at a low interest rate. This is ideal for customers who prefer spreading the payment over time without heavy interest charges.",
+  
+  "EMI Tenure": 12,
+  "EMI Tenure Explanation": "The EMI tenure is 12 months. This means customers will pay for the product over a period of one year, with each installment due monthly.",
+  
+  "Low Cost EMI Subvention": 2.75,
+  "Low Cost EMI Subvention Explanation": "The EMI subvention provided by the brand (Redmi) is 2.75%. This means that the brand absorbs 2.75% of the interest costs, making the EMI option more affordable for customers.",
+  
+  "Cashback Type": "Fixed Amount",
+  "Cashback Type Explanation": "The cashback offered is a fixed amount. In this case, customers will receive ₹2000 as cashback when they make their purchase through EMI or other eligible methods.",
+  
+  "Cashback Amount": 2000,
+  "Cashback Amount Explanation": "The cashback amount is ₹2000, which will be credited to the customer after meeting the eligibility criteria. This is a fixed cashback amount and does not vary based on the purchase price.",
+  
+  "Maximum Cashback Amount": 2000,
+  "Maximum Cashback Amount Explanation": "The maximum cashback a customer can receive is ₹2000. This limit ensures that no customer receives more than this amount in cashback, regardless of the product price or the payment method used.",
+  
+  "Promotion Start Date": "2025-03-01",
+  "Promotion Start Date Explanation": "The promotion for this product starts on 1st March 2025. This is when customers can start benefiting from the EMI offers and cashback deals.",
+  
+  "Promotion End Date": "2025-03-30",
+  "Promotion End Date Explanation": "The promotion ends on 31st March 2025. After this date, the EMI scheme and cashback offer may no longer be available, and the product may return to its regular pricing or offer structure.",
+  
+  "Scheme ID": "Redmi_Phone_13C5G_SBI_6GB128GB_53285",
+  "Scheme ID Explanation": "The Scheme ID uniquely identifies this particular promotional offer. It includes information about the product (Redmi 13C 5G), bank (SBI), and variant (6GB + 128GB).",
+  
+  "Is EMI": true,
+  "Is EMI Explanation": "The EMI option is available for this product, meaning customers can choose to pay for the product in monthly installments instead of a lump sum.",
+  
+  "Is Cashback": true,
+  "Is Cashback Explanation": "Cashback is available for this product. Customers who meet the required conditions will receive ₹2000 as cashback on the purchase.",
+  
+  "Is Upfront": true,
+  "Is Upfront Explanation": "The cashback is provided upfront, meaning customers receive it as soon as the purchase is made, rather than after completing the EMI payments.",
+  
+  "EMI Brand Subvention": 2.75,
+  "EMI Brand Subvention Explanation": "The EMI brand subvention is 2.75%, which means the brand (Redmi) is covering a portion of the interest, making the EMI option more affordable for the customer.",
+  
+  "EMI Bank Subvention": 0,
+  "EMI Bank Subvention Explanation": "There is no subvention provided by the bank (SBI) for the EMI scheme, meaning the customer will pay the full interest rate charged by the bank, except for the 2.75% covered by the brand.",
+  
+  "Cashback Brand Subvention": 40,
+  "Cashback Brand Subvention Explanation": "The cashback amount is split in a ratio where the brand (Redmi) contributes 40% of the cashback value.",
+  
+  "Cashback Bank Subvention": 60,
+  "Cashback Bank Subvention Explanation": "The bank (SBI) contributes 60% of the cashback value. This indicates a collaboration between the brand and the bank to offer the cashback benefit to the customer.",
+  
+  "Additional Terms & Conditions": "Cashback available for credit card EMI purchases from select banks.",
+  "Additional Terms & Conditions Explanation": "This condition means that the cashback offer is applicable only to purchases made through EMI options using credit cards from certain banks. Customers should ensure they meet the criteria to qualify for cashback."
+}}

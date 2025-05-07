@@ -1,0 +1,109 @@
+{
+  "Product Fields": {
+    "Brand": {
+      "description": "The name of the brand will always be 'Xiaomi'.",
+      "default": "Xiaomi"
+    },
+    "Category": {
+      "description": "Defines the type of product being considered. Examples include Smartphone, Laptop, and Tablet. If no specific mention of the product category is mentioned set this field to null.",
+      "default": null
+    },
+    "Model Name": {
+      "description": "Specifies the product's model name. Examples include iPhone 16 and Oppo Reno 1., remember these are examples only and not absolute values to consider in any case.",
+      "default": null
+    },
+    "Model Description": {
+      "description": "Provides a detailed description of the product model. For example, for smartphones, it might include details like iPhone 16 with 64GB RAM and 256GB Internal Storage, remember these are examples only and not absolute values to consider in any case.",
+      "default": null
+    },
+    "SKU": {
+      "description": "A unique identifier assigned to each product , it should be labelled as SKU only in the input data .",
+      "default": null
+    },
+    "MRP": {
+      "description": "The Maximum Retail Price (MRP) at which the product can be sold in the market. This field may also be labeled as 'Max Price' when analyzing the row. The final value is to be an integer and should be set to null if no relevant value is to be found.",
+      "default": null
+    },
+    "MOP": {
+      "description": "The Minimum Operating Price (MOP) .If no field titled MOP is available then use the Min Swipe (Minimum Swipe) value in place instead . If both conditions aren't satisfied then set the value as null.The final value is to be an integer and should be set to null if no relevant value is to be found. ",
+      "default": null
+    },
+    "Bank Name": {
+      "description": "Specifies the bank responsible for processing the transaction. This field follows a predefined whitelist of banks.",
+      "default": null
+    },
+    "Scheme Type": {
+      "description": "This field will always have the value 'Brand EMI.'",
+      "default": "Brand EMI"
+    },
+    "EMI Type": {
+      "description": "Indicates the type of EMI available. It will be 'Zero Cost EMI' if no interest is charged or 'Low Cost EMI' if interest is applied.",
+      "default": null
+    },
+    "EMI Tenure": {
+      "description": "Specifies the duration of the EMI . Following are the available options - [3,6,9,12,18,24,Fullswipe]",
+      "default": null
+    },
+    "Low Cost EMI Subvention": {
+      "description": "If the EMI type is 'Low Cost EMI,' this field specifies the applicable interest percentage.",
+      "default": null
+    },
+    "Cashback Type": {
+      "description": "Defines how the cashback is provided. It can either be a fixed amount (e.g., 2000, 5000) or a percentage of MRP or MOP (e.g., 10% of MRP).",
+      "default": null
+    },
+    "Cashback Amount": {
+      "description": "Specifies the total cashback amount offered as a fixed value.",
+      "default": null
+    },
+    "Maximum Cashback Amount": {
+      "description": "The maximum possible cashback amount available for the product.",
+      "default": null
+    },
+    "Promotion Start Date": {
+      "description": "The date on which the promotional offer begins. This should be in YYYY-MM-DD format only , if no value is to be found set this to Null",
+      "default": null
+    },
+    "Promotion End Date": {
+      "description": "The date on which the promotional offer expires.This should be in YYYY-MM-DD format only , if no value is to be found set this to Null",
+      "default": null
+    },
+    "Scheme ID": {
+      "description": "A unique identification code generated using a combination of Brand, Category, Model Name, Bank, and SKU.",
+      "default": null
+    },
+    "Is EMI": {
+      "description": "A Boolean field that is set to 'True' if EMI is available for the product; otherwise, it is set to 'False.'",
+      "default": false
+    },
+    "Is Cashback": {
+      "description": "A Boolean field that is set to 'True' if cashback is available for the product; otherwise, it is set to 'False'.",
+      "default": false
+    },
+    "Is Upfront": {
+      "description": "A Boolean field that is set to 'False' if the cashback type is deferred or post-cashback; otherwise, it is set to 'True'.
+      The cashback type in general will be determined by what the mode value is . If {'Mode' : 'Deferred'} then set this to False , else set this to true .       If no value is present in 'Mode' field then set it to 'null'  ",
+      "default": null
+    },
+    "EMI Brand Subvention": {
+      "description": "The percentage of interest borne by the brand in the case of a 'Low Cost EMI' scheme. This should be an integer value only and should be set to null if no relevant value is available.",
+      "default": null
+    },
+    "EMI Bank Subvention": {
+      "description": "The percentage of interest borne by the bank in the case of a 'Low Cost EMI' scheme. This should be an integer value only and should be set to null if no relevant value is available.",
+      "default": null
+    },
+    "Cashback Brand Subvention": {
+      "description": "The percentage of cashback to be borne by the brand. This should be an integer value only and should be set to null if no relevant value is available",
+      "default": null
+    },
+    "Cashback Bank Subvention": {
+      "description": "The percentage of cashback to be borne by the bank. This should be an integer value only and should be set to null if no relevant value is available",
+      "default": null
+    },
+    "Additional Terms & Conditions": {
+      "description": "Any other relevant details that are important for the scheme but are not covered in the above fields should be mentioned here.",
+      "default": null
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Comparison</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        header, footer {
+            background-color: #0071e3;
+            color: white;
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        header {
+            top: 0;
+            text-align: left;
+            font-size: 24px;
+        }
+        footer {
+            bottom: 0;
+            text-align: center;
+        }
+        main {
+            padding: 40px;
+            max-width: 1400px;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+        .scheme-detail {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            flex: 1;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 12px 20px;
+            font-size: 14px;
+        }
+        .scheme-detail h3 {
+            grid-column: 1 / -1;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .editable-field {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            min-width: 200px;
+        }
+        .editable-field:focus {
+            outline: none;
+            border-color: #0071e3;
+            background-color: white;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+            padding-bottom: 40px;
+        }
+        .action-link {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 24px;
+            background-color: #0071e3;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.2s ease;
+        }
+        .action-link.approve {
+            background-color: #28a745; /* Green */
+        }
+        .action-link.reject {
+            background-color: #dc3545; /* Red */
+        }
+        .action-link.edit {
+            background-color: #0984e1; /* Yellow/Orange */}
+        .action-link:hover {
+            background-color: #005bb5;
+        }
+        .save-btn {
+            background-color: #28a745;
+            margin-top: 20px;
+        }
+        .save-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<header>
+    Scheme Approval
+</header>
+
+<main>
+    <!-- Left Scheme -->
+    <div class="scheme-detail">
+        <h3>Reference Row</h3>
+            
+            {% for key, value in raw_json.items %}
+                <div><strong>{{ key }}</strong></div>
+                <div>{{ value }}</div>
+            {% endfor %}
+
+    </div>
+
+    <!-- Right Scheme - Editable Form -->
+    <form class="scheme-detail" method="post" action="/save/{{ scheme.id }}/">
+        {% csrf_token %}
+        <h3>Output Scheme</h3>
+        <div><strong>Brand</strong></div><div><input type="text" class="editable-field" name="brand" value="{{ scheme.brand }}"></div>
+        <div><strong>Category</strong></div><div><input type="text" class="editable-field" name="category" value="{{ scheme.category }}"></div>
+        <div><strong>Model Name</strong></div><div><input type="text" class="editable-field" name="model_name" value="{{ scheme.model_name }}"></div>
+        <div><strong>Model Description</strong></div><div><input type="text" class="editable-field" name="model_description" value="{{ scheme.model_description }}"></div>
+        <div><strong>SKU</strong></div><div><input type="text" class="editable-field" name="sku" value="{{ scheme.sku }}"></div>
+        <div><strong>MRP</strong></div><div><input type="text" class="editable-field" name="mrp" value="{{ scheme.mrp }}"></div>
+        <div><strong>MOP</strong></div><div><input type="text" class="editable-field" name="mop" value="{{ scheme.mop }}"></div>
+        <div><strong>Bank Name</strong></div><div><input type="text" class="editable-field" name="bank_name" value="{{ scheme.bank_name }}"></div>
+        <div><strong>Scheme Type</strong></div><div><input type="text" class="editable-field" name="scheme_type" value="{{ scheme.scheme_type }}"></div>
+        <div><strong>EMI Type</strong></div><div><input type="text" class="editable-field" name="emi_type" value="{{ scheme.emi_type }}"></div>
+        <div><strong>EMI Tenure</strong></div><div><input type="text" class="editable-field" name="emi_tenure" value="{{ scheme.emi_tenure }}"></div>
+        <div><strong>Low Cost EMI Subvention</strong></div><div><input type="text" class="editable-field" name="low_cost_emi_subvention" value="{{ scheme.low_cost_emi_subvention }}"></div>
+        <div><strong>Cashback Type</strong></div><div><input type="text" class="editable-field" name="cashback_type" value="{{ scheme.cashback_type }}"></div>
+        <div><strong>Cashback Amount</strong></div><div><input type="text" class="editable-field" name="cashback_amount" value="{{ scheme.cashback_amount }}"></div>
+        <div><strong>Max Cashback Amount</strong></div><div><input type="text" class="editable-field" name="max_cashback_amount" value="{{ scheme.max_cashback_amount }}"></div>
+        <div><strong>Promo Start Date</strong></div><div><input type="text" class="editable-field" name="promo_start_date" value="{{ scheme.promo_start_date }}"></div>
+        <div><strong>Promo End Date</strong></div><div><input type="text" class="editable-field" name="promo_end_date" value="{{ scheme.promo_end_date }}"></div>
+        <div><strong>Scheme ID</strong></div><div><input type="text" class="editable-field" name="scheme_id" value="{{ scheme.scheme_id }}"></div>
+        <div><strong>Is EMI</strong></div><div><input type="text" class="editable-field" name="is_emi" value="{{ scheme.is_emi }}"></div>
+        <div><strong>Is Cashback</strong></div><div><input type="text" class="editable-field" name="is_cashback" value="{{ scheme.is_cashback }}"></div>
+        <div><strong>Is Upfront</strong></div><div><input type="text" class="editable-field" name="is_upfront" value="{{ scheme.is_upfront }}"></div>
+        <div><strong>EMI Brand Subvention</strong></div><div><input type="text" class="editable-field" name="emi_brand_subvention" value="{{ scheme.emi_brand_subvention }}"></div>
+        <div><strong>EMI Bank Subvention</strong></div><div><input type="text" class="editable-field" name="emi_bank_subvention" value="{{ scheme.emi_bank_subvention }}"></div>
+        <div><strong>Cashback Brand Subvention</strong></div><div><input type="text" class="editable-field" name="cashback_brand_subvention" value="{{ scheme.cashback_brand_subvention }}"></div>
+        <div><strong>Cashback Bank Subvention</strong></div><div><input type="text" class="editable-field" name="cashback_bank_subvention" value="{{ scheme.cashback_bank_subvention }}"></div>
+        <div><strong>Additional Terms</strong></div><div><input type="text" class="editable-field" name="additional_terms" value="{{ scheme.additional_terms }}"></div>
+        <div><strong>Is Approved</strong></div><div><input type="text" class="editable-field" name="is_approved" value="{{ scheme.is_approved }}"></div>
+        
+        <div class="actions" style="grid-column: 1 / -1;">
+            <button type="submit" class="action-link save-btn">Save Changes</button>
+        </div>
+    </form>
+</main>
+
+
+
+<footer>
+    &copy; 2025 Scheme Portal
+</footer>
+</body>
+</html>

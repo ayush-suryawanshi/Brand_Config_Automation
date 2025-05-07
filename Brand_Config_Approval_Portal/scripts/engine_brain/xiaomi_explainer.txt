@@ -1,0 +1,302 @@
+{
+  "Terminology": {
+    "CC": "Represents Credit Card.",
+    "DC": "Represents Debit Card.",
+    "Category": "Indicates what category the SKU belongs to, such as 'Phone', 'Laptop', 'Tablets', etc.",
+    "Product ID": "Represents the unique SKU ID.",
+    "Nomenclature": "Represents the complete product description, including details like name, variant, etc.",
+    "SRP/Max Price": "This value indicates both the MOP (Market Operating Price) and the MRP (Maximum Retail Price) of the product.",
+    "Min Swipe": "The minimum price of the product below which it cannot be sold.This field represents the MOP.",
+    "CC Full Swipe": "Represents the cashback offered on a Credit Card Full Swipe transaction.",
+    "CC Full Swipe Bank Share": "Represents the bank’s share or subvention in a CC Full Swipe transaction. The value can be expressed either as a percentage or an absolute amount.",
+    "Brand CC Full Swipe Share": "Represents the portion of cashback/subvention borne by the brand for CC Full Swipe transactions. The value can be expressed either as a percentage or an absolute amount.",
+    "CC EMI": "Represents Credit Card EMI transactions, where the purchase amount is converted into EMIs instead of a one-time full swipe.",
+    "CC EMI Bank Share": "Represents the bank’s share in subvention or cost coverage for CC EMI transactions. The value can be expressed either as a percentage or an absolute amount.",
+    "Brand CC EMI Share": "Represents the brand’s share in subvention or cost coverage for CC EMI transactions. The value can be expressed either as a percentage or an absolute amount.",
+    "DC EMI": "Represents Debit Card EMI transactions, where the purchase amount is converted into EMIs using a debit card.",
+    "DC EMI Bank Share": "Represents the bank’s share in subvention or cost coverage for DC EMI transactions. The value can be expressed either as a percentage or an absolute amount.",
+    "Brand DC EMI Share": "Represents the brand’s share in subvention or cost coverage for DC EMI transactions. The value can be expressed either as a percentage or an absolute amount.",
+    "Duration": "Describes the validity period of the offer, including start date and end date.",
+    "Cards": "Specifies the applicable payment modes, i.e., whether the transaction is via CC (Credit Card) or DC (Debit Card) and whether it is an EMI transaction or a Full Swipe transaction.",
+    "Mode": "Indicates how cashback is applied—either 'Deferred' (credited later) or 'Instant' (given at the time of purchase)."
+  }
+}
+
+
+{"Rule": 'If a field similar to {'Mode': 'Deferred'} exists in the row , this indicates the 'Is Upfront' field should be set to 'False' because this indicates that the cashback type is deferred and not upfront.'}
+
+banks : [
+    'HDFC CC', 'HDFC DC',
+    'ICICI CC', 'ICICI DC',
+    'AXIS CC', 'AXIS DC',
+    'UNIPAY CC', 'UNIPAY DC',
+    'CITIBANK CC', 'CITIBANK DC',
+    'STANDARD CHARTERED CC', 'STANDARD CHARTERED DC',
+    'HSBC CC', 'HSBC DC',
+    'KOTAK CC', 'KOTAK DC',
+    'SBI CC', 'SBI DC',
+    'AMEX CC',  
+    'INDUSIND CC', 'INDUSIND DC',
+    'BAJAJ CC', 'BAJAJ DC',
+    'RBL CC', 'RBL DC',
+    'YES CC', 'YES DC',
+    'Bank of Baroda CC', 'Bank of Baroda DC',
+    'FEDERAL CC', 'FEDERAL DC',
+    'J&K CC', 'J&K DC',
+    'AU CC', 'AU DC',
+    'ONECARD CC',
+    'IDFC FIRST CC', 'IDFC FIRST DC',
+
+]
+
+- **AMEX and OneCard** do not have a debit card option.
+
+Sample SKU IDs : 
+[
+    53285, 53280, 51417, 53288, 53287, 53286, 59182, 60376, 59184, 60363,
+    53285, 53280, 51417, 53288, 53287, 53286, 59182, 60376, 59184, 60363,
+    53285, 53280, 51417, 53288, 53287, 53286, 59182, 60376, 59184, 60363,
+    53285, 53280, 51417, 53288, 53287, 53286, 59182, 60376, 59184, 60363
+]
+
+{
+  "Cards": [
+    {
+      "Input": "SBI|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for SBI bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    },
+    {
+      "Input": "HDFC|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for HDFC bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    },
+    {
+      "Input": "Kotak|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for Kotak bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    },
+    {
+      "Input": "Axis|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for Axis bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    },
+    {
+      "Input": "J&K|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for J&K bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    },
+    {
+      "Input": "BOB|CC Full Swipe|CC EMI|DC EMI",
+      "Understanding": "This means for BOB bank offers are available for Credit Card Full Swipe, Credit Card EMI, and Debit Card EMI."
+    }
+  ]
+}
+
+{1st Mar'25 to 31st Mar'25 : This means the offer is valid from 1st March 2025 to 31st March 2025}
+
+ JSON Data Handling Rules**
+- Separate JSON responses must be created for each combination of bank and tenure , in case fullswipe option exists for a set of banks seperate json is to be created for every combination of fullswipe and bank . Example:
+  ('HDFC CC', 6),
+    ('HDFC CC', 12),
+    ('HDFC CC', 'Fullswipe'),
+    ('HDFC DC', 6),
+    ('HDFC DC', 12),
+    ('HDFC DC', 'Fullswipe'),
+    
+    ('ICICI CC', 6),
+    ('ICICI CC', 9),
+    ('ICICI CC', 'Fullswipe'),
+    ('ICICI DC', 6),
+    ('ICICI DC', 9),
+    ('ICICI DC', 'Fullswipe'),
+    
+    ('SBI CC', 3),
+    ('SBI CC', 6),
+    ('SBI CC', 'Fullswipe'),
+    ('SBI DC', 3),
+    ('SBI DC', 6),
+    ('SBI DC', 'Fullswipe'),
+
+    ('KOTAK CC', 6),
+    ('KOTAK CC', 9),
+  - For 2 banks and 3 tenures, generate **6 JSON responses** , in this definition fullswipe is also conisdered as a type of tenure.
+
+
+{
+  "rules": [
+    {
+      "rule": "Strict Key Mapping",
+      "description": "Only use fields that exist in the input JSON. Do not add new fields or modify existing ones.",
+      "example": {
+        "input": {
+          "Brand": "Oppo",
+          "Category": "Smartphone",
+          "Model Name": "Find X8"
+        },
+        "incorrect_output": {
+          "Brand": "Oppo",
+          "Category": "Smartphone",
+          "Model Name": "Find X8",
+          "Color": "Black" 
+        },
+        "correct_output": {
+          "Brand": "Oppo",
+          "Category": "Smartphone",
+          "Model Name": "Find X8"
+        }
+      }
+    },
+    {
+      "rule": "No External Assumptions",
+      "description": "All values must be derived directly from the input data. Do not infer missing details, such as specifications or additional features.",
+      "example": {
+        "input": {
+          "Brand": "Oppo",
+          "Model Name": "Find X8",
+          "MRP": 69999
+        },
+        "incorrect_output": {
+          "Brand": "Oppo",
+          "Model Name": "Find X8",
+          "MRP": 69999,
+          "Processor": "Snapdragon 8 Gen 2" 
+        },
+        "correct_output": {
+          "Brand": "Oppo",
+          "Model Name": "Find X8",
+          "MRP": 69999
+        }
+      }
+    },
+    {
+      "rule": "Consistent Value Interpretation",
+      "description": "Maintain numerical, boolean, and textual values exactly as provided. Do not change number formats or convert between data types.",
+      "example": {
+        "input": {
+          "EMI Tenure": 24
+        },
+        "incorrect_output": {
+          "EMI Tenure": "Twenty-Four" 
+        },
+        "correct_output": {
+          "EMI Tenure": 24
+        }
+      }
+    },
+    {
+      "rule": "No Contextual Inference Beyond Given Data",
+      "description": "Do not add explanations, assumptions, or background information that is not explicitly stated in the input.",
+      "example": {
+        "input": {
+          "Bank Name": "IDFC First Bank"
+        },
+        "incorrect_output": {
+          "Bank Name": "IDFC First Bank",
+          "Bank Description": "IDFC First Bank, known for low-interest loans." 
+        },
+        "correct_output": {
+          "Bank Name": "IDFC First Bank"
+        }
+      }
+    },
+    {
+      "rule": "No Additional Marketing Language or Bias",
+      "description": "Avoid subjective or promotional language. Keep descriptions factual and neutral.",
+      "example": {
+        "input": {
+          "Model Description": "Oppo Find X8 with 12GB RAM and 256GB Internal Storage"
+        },
+        "incorrect_output": {
+          "Model Description": "The incredible Oppo Find X8, featuring a revolutionary 12GB RAM and ultra-fast 256GB storage!" 
+        },
+        "correct_output": {
+          "Model Description": "Oppo Find X8 with 12GB RAM and 256GB Internal Storage"
+        }
+      }
+    },
+    {
+      "rule": "Cashback & EMI Calculations Must Align with Input Values",
+      "description": "Ensure that cashback percentages and EMI subvention values match the provided figures exactly.",
+      "example": {
+        "input": {
+          "Cashback Type": "Percentage",
+          "Cashback Amount": 10
+        },
+        "incorrect_output": {
+          "Cashback Type": "Percentage",
+          "Cashback Amount": 12 
+        },
+        "correct_output": {
+          "Cashback Type": "Percentage",
+          "Cashback Amount": 10
+        }
+      }
+    },
+    {
+      "rule": "Promotion Dates Must Not Be Altered",
+      "description": "Use the exact start and end dates given in the input. If no dates are provided, do not generate new ones.",
+      "example": {
+        "input": {
+          "Promotion Start Date": "1st March",
+          "Promotion End Date": "31st March"
+        },
+        "incorrect_output": {
+          "Promotion Start Date": "15th February",
+          "Promotion End Date": "31st March"
+        },
+        "correct_output": {
+          "Promotion Start Date": "1st March",
+          "Promotion End Date": "31st March"
+        }
+      }
+    },
+    {
+      "rule": "Scheme & Financial Terms Must Be Directly Taken from Input",
+      "description": "Do not modify scheme names, EMI types, or financial conditions. Use the provided terminology.",
+      "example": {
+        "input": {
+          "Scheme Type": "Brand EMI",
+          "EMI Type": "Low Cost EMI"
+        },
+        "incorrect_output": {
+          "Scheme Type": "Manufacturer EMI",
+          "EMI Type": "Zero Cost EMI" 
+        },
+        "correct_output": {
+          "Scheme Type": "Brand EMI",
+          "EMI Type": "Low Cost EMI"
+        }
+      }
+    },
+    {
+      "rule": "Maintain Naming Conventions of Fields",
+      "description": "Preserve the original field names and structure as closely as possible. Do not rename or rephrase attributes.",
+      "example": {
+        "input": {
+          "Is Cashback": true
+        },
+        "incorrect_output": {
+          "Cashback Available": true 
+        },
+        "correct_output": {
+          "Is Cashback": true
+        }
+      }
+    },
+    {
+      "rule": "If a Detail is Unclear, Do Not Fill It In",
+      "description": "If a field's value is missing or unclear, return 'Not Specified' instead of making assumptions.",
+      "example": {
+        "input": {
+          "Bank Sharing": null
+        },
+        "incorrect_output": {
+          "Bank Sharing": "50%" 
+        },
+        "correct_output": {
+          "Bank Sharing": "Not Specified"
+        }
+      }
+    }
+  ]
+}
+
+
+
+
