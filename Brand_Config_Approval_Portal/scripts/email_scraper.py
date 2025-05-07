@@ -13,8 +13,10 @@ from Brand_Config_Approval_Portal.core.models import Email,EmailAttachment
 
 while True:
     # Connect to the mail server
-    imap = imaplib.IMAP4_SSL("imap.yourmailserver.com")
-    imap.login("your_email@example.com", "your_password")
+    imap = imaplib.IMAP4_SSL("imap.gmail.com")
+    email_address = os.getenv('GMAIL_ADDRESS')
+    email_password = os.getenv('GMAIL_APP_PASSWORD')
+    imap.login(email_address, email_password)
 
     imap.select("INBOX")  # Select inbox
 
