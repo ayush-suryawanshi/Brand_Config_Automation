@@ -75,5 +75,7 @@ while True:
 
         imap.store(mail_id, '+FLAGS', '\\Seen')
 
-    # Cleanup
-    imap.logout()
+    # # Cleanup
+    # imap.logout()
+    import time
+    time.sleep(30)
